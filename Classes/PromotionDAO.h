@@ -9,15 +9,14 @@
 
 @interface PromotionDAO : NSObject {
 	
-	NSString *geopromoPlist;
     NSArray *geopromoContent;
 
 }
 
-@property (nonatomic, readonly) NSString *geopromoPlist;
+
 @property (nonatomic, readonly) NSArray *geopromoContent;
 
-- (id)initWithName:(NSString *)Name;
+- (id)initWithURL:(NSURL *)Url;
 - (NSDictionary *)ItemAtIndex:(int)index;
 - (int)Count;
 

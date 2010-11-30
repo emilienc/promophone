@@ -11,19 +11,14 @@
 
 @implementation PromotionDAO
 
-@synthesize geopromoPlist;
+//@synthesize geopromoPlist;
 @synthesize geopromoContent;
 
-// Gets a plist name and reads in its contents as an array
-- (id)initWithName:(NSString *)Name {
+// ask server for promotions and put them in an array
+- (id)initWithURL:(NSURL *)Url {
     if (self = [super init]) {
-        geopromoPlist = Name;
-		NSURL *theFileURL = [NSURL URLWithString:@"http://geopromo.heroku.com/promotions/list.plist?lat=43.192867&lng=5.755785"];
-		UIApplication* app = [UIApplication sharedApplication];
-		app.networkActivityIndicatorVisible = YES; // to stop it, set this to NO
-		geopromoContent = [[NSArray alloc] initWithContentsOfURL:theFileURL];
-		app.networkActivityIndicatorVisible = NO;
-    }
+		geopromoContent = [[NSArray alloc] initWithContentsOfURL:Url];
+	}
     return self;
 }
 

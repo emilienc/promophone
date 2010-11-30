@@ -8,12 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #include "PromotionDAO.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface SimpleTableViewController : UIViewController {
+@interface SimpleTableViewController : UIViewController <CLLocationManagerDelegate> {
 	IBOutlet UITableView *tblSimpleTable;
-	//NSArray *arrayData;
+	
 	PromotionDAO *dao;
+	
+	CLLocationManager	*locationManager;
+	NSMutableArray		*locationMeasurements;
 }
+
+@property (nonatomic, retain) UITableView *tblSimpleTable;
+@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic, retain) NSMutableArray	*locationMeasurements;
 
 @end
 
