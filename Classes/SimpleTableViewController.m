@@ -200,11 +200,12 @@
 	//NSString *urlNextPage		= [NSString stringWithFormat:@"http://geopromo.heroku.com/promotions/list.plist?lat=43.192867&lng=5.755785"];
 	
 	CLLocationCoordinate2D	coordinate = [newLocation coordinate];
-	NSString *urlNextPage		= [NSString stringWithFormat:@"http://geopromo.heroku.com/promotions/list.plist?lat=%l long=%d", [NSNumber numberWithDouble:coordinate.latitude],	[NSNumber numberWithDouble:coordinate.longitude]];
+	NSString *urlNextPage		= [NSString stringWithFormat:@"http://geopromo.heroku.com/promotions/list.plist?lat=%f&lng=%f", coordinate.latitude,coordinate.longitude];
 	NSURL	*theFileURL				= [NSURL URLWithString:urlNextPage];
 	
-	
-	//NSURL *theFileURL = [NSURL URLWithString:@"http://geopromo.heroku.com/promotions/list.plist?lat=43.192867&lng=5.755785"];
+	//printf("localisation = lat = %f long = %f\n", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
+	//NSLog(urlNextPage);
+	//NSURL *theFileURL = [NSURL URLWithString:@"http://geopromo.heroku.com/promotions/list.plist?lat=49.913548&lng=2.324091"];
 	dao = [[PromotionDAO alloc] initWithURL:theFileURL];
 	
 		
