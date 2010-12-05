@@ -1,7 +1,7 @@
 TSimpleTable
 v7
 r0
-t312965180.990895
+t313240377.570681
 cCheck dependencies
 cProcessInfoPlistFile /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/Info.plist SimpleTable-Info.plist
 cCompileXIB /Users/emilien/Documents/SimpleTable/MainWindow.xib
@@ -11,6 +11,7 @@ cCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Object
 cCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableAppDelegate.o /Users/emilien/Documents/SimpleTable/Classes/SimpleTableAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableViewController.o /Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/PromotionDAO.o /Users/emilien/Documents/SimpleTable/Classes/PromotionDAO.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/CustomCell.o /Users/emilien/Documents/SimpleTable/Classes/CustomCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable normal i386
 cGenerateDSYMFile /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app.dSYM /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable
 cTouch /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app
@@ -69,6 +70,18 @@ N/Users/emilien/Documents/SimpleTable/../../Downloads/promotions-4.plist
 c000000004CDBACD10000000000000187
 t1289465041
 s391
+
+N/Users/emilien/Documents/SimpleTable/Classes/CustomCell.h
+c000000004CFB732100000000000001B2
+t1291547425
+s434
+i<Cocoa/Cocoa.h>
+
+N/Users/emilien/Documents/SimpleTable/Classes/CustomCell.m
+c000000004CFB73B900000000000005C9
+t1291547577
+s1481
+i"CustomCell.h"
 
 N/Users/emilien/Documents/SimpleTable/Classes/GeoPromo.h
 c000000004CF2A42F000000000000018B
@@ -139,10 +152,11 @@ i"PromotionDAO.h"
 i<CoreLocation/CoreLocation.h>
 
 N/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m
-c000000004CF740B70000000000001B68
-t1291272375
-s7016
+c000000004CFB73B20000000000001DCD
+t1291547570
+s7629
 i"SimpleTableViewController.h"
+i"CustomCell.h"
 
 N/Users/emilien/Documents/SimpleTable/MainWindow.xib
 c000000004CF1F2D80000000000004E59
@@ -162,11 +176,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app
-t1291272380
+t1291547577
 s238
 
 N/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app.dSYM
-t1291272380
+t1291547577
 s102
 
 N/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/Info.plist
@@ -182,8 +196,8 @@ t1290930782
 s8
 
 N/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable
-t1291272380
-s25572
+t1291547577
+s32316
 
 N/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTableViewController.nib
 t1290930784
@@ -200,6 +214,10 @@ s0
 N/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/promotions-4.plist
 t2
 s0
+
+N/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/CustomCell.o
+t1291547577
+s45496
 
 N/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/GeoPromo.o
 t2
@@ -218,17 +236,17 @@ t2
 s0
 
 N/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTable.LinkFileList
-c000000004CF20A5E000000000000022F
-t1290930782
-s559
+c000000004CFB72E800000000000002B5
+t1291547368
+s693
 
 N/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableAppDelegate.o
 t1291099761
 s51604
 
 N/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableViewController.o
-t1291272380
-s55060
+t1291547577
+s57208
 
 N/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/main.o
 t1290930786
@@ -251,7 +269,22 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies312965180#312965180#0(0"0(0#1#0"8616578656#0"0#
+lSLF07#2@18"Check dependencies313240377#313240377#0(0"0(0#1#0"8617271328#0"0#
+
+CCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/CustomCell.o /Users/emilien/Documents/SimpleTable/Classes/CustomCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s313240377.381145
+e313240377.531047
+r1
+xCompileC
+xbuild/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/CustomCell.o
+x/Users/emilien/Documents/SimpleTable/Classes/CustomCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/emilien/Documents/SimpleTable/Classes/CustomCell.m: In function '-[CustomCell initWithFrame:reuseIdentifier:]':
+o/Users/emilien/Documents/SimpleTable/Classes/CustomCell.m:17: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)
+lSLF07#2@65"Compile /Users/emilien/Documents/SimpleTable/Classes/CustomCell.m313240377#313240377#0(407"/Users/emilien/Documents/SimpleTable/Classes/CustomCell.m: In function '-[CustomCell initWithFrame:reuseIdentifier:]':/Users/emilien/Documents/SimpleTable/Classes/CustomCell.m:17: warning: 'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)1(22@216"'initWithFrame:reuseIdentifier:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:189)313240377#119#288#0(6@57"/Users/emilien/Documents/SimpleTable/Classes/CustomCell.m313240377#17#0#17#0#33"'*' is deprecated (declared at *)0(0#0#57"/Users/emilien/Documents/SimpleTable/Classes/CustomCell.m8617094144#2054"    cd /Users/emilien/Documents/SimpleTable    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-generated-files.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-own-target-headers.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-all-target-headers.hmap -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-project-headers.hmap -F/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -I/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/include -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources/i386 -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources -include /var/folders/xX/xXsEmcPnGPyJxs-RU0pgek+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleTable_Prefix-cgvzxklpudqtghedozzxzszpjdwk/SimpleTable_Prefix.pch -c /Users/emilien/Documents/SimpleTable/Classes/CustomCell.m -o /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/CustomCell.o0#
 
 CCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/GeoPromo.o /Users/emilien/Documents/SimpleTable/Classes/GeoPromo.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
@@ -289,8 +322,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/emilien/Documents/SimpleTable/Classes/SimpleTableAppDelegate.m312792561#312792561#0(0"0(0#0#69"/Users/emilien/Documents/SimpleTable/Classes/SimpleTableAppDelegate.m8618141376#2078"    cd /Users/emilien/Documents/SimpleTable    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-generated-files.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-own-target-headers.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-all-target-headers.hmap -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-project-headers.hmap -F/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -I/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/include -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources/i386 -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources -include /var/folders/xX/xXsEmcPnGPyJxs-RU0pgek+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleTable_Prefix-cgvzxklpudqtghedozzxzszpjdwk/SimpleTable_Prefix.pch -c /Users/emilien/Documents/SimpleTable/Classes/SimpleTableAppDelegate.m -o /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableAppDelegate.o0#
 
 CCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableViewController.o /Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s312965180.835084
-e312965180.954142
+s313240377.327041
+e313240377.498652
 r1
 xCompileC
 xbuild/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableViewController.o
@@ -299,7 +332,13 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m312965180#312965180#0(0"0(0#0#72"/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m8618075872#2084"    cd /Users/emilien/Documents/SimpleTable    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-generated-files.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-own-target-headers.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-all-target-headers.hmap -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-project-headers.hmap -F/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -I/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/include -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources/i386 -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources -include /var/folders/xX/xXsEmcPnGPyJxs-RU0pgek+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleTable_Prefix-cgvzxklpudqtghedozzxzszpjdwk/SimpleTable_Prefix.pch -c /Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m -o /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableViewController.o0#
+o/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m: In function '-[SimpleTableViewController tableView:cellForRowAtIndexPath:]':
+o/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:128: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct CustomCell *'
+o/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:147: warning: no '-initWithData:cache:' method found
+o/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:147: warning: (Messages without a matching method signature
+o/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:147: warning: will be assumed to return 'id' and accept
+o/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:147: warning: '...' as arguments.)
+lSLF07#2@80"Compile /Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m313240377#313240377#0(837"/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m: In function '-[SimpleTableViewController tableView:cellForRowAtIndexPath:]':/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:128: warning: incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct CustomCell *'/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:147: warning: no '-initWithData:cache:' method found/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:147: warning: (Messages without a matching method signature/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:147: warning: will be assumed to return 'id' and accept/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m:147: warning: '...' as arguments.)3(22@102"Incompatible Objective-C types initializing 'struct UITableViewCell *', expected 'struct CustomCell *'313240377#151#190#0(6@72"/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m313240370#128#0#128#0#61"incompatible Objective-C types initializing '*', expected '*'0(22@38"No '-initWithData:cache:' method found313240377#341#126#0(6@72"/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m313240370#147#0#147#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)313240377#467#133#0(6@72"/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m313240370#147#0#147#0#0"0(0#0#72"/Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m8616566624#2084"    cd /Users/emilien/Documents/SimpleTable    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-generated-files.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-own-target-headers.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-all-target-headers.hmap -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-project-headers.hmap -F/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -I/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/include -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources/i386 -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources -include /var/folders/xX/xXsEmcPnGPyJxs-RU0pgek+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleTable_Prefix-cgvzxklpudqtghedozzxzszpjdwk/SimpleTable_Prefix.pch -c /Users/emilien/Documents/SimpleTable/Classes/SimpleTableViewController.m -o /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTableViewController.o0#
 
 CCompileC build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/main.o /Users/emilien/Documents/SimpleTable/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s312623585.953393
@@ -347,23 +386,23 @@ CCopyPlistFile /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/
 r0
 
 CGenerateDSYMFile /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app.dSYM /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable
-s312965180.974733
-e312965180.988451
+s313240377.552743
+e313240377.568591
 r1
 xGenerateDSYMFile
 x/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app.dSYM
 x/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable
-lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/SimpleTable.app.dSYM build/Debug-iphonesimulator/SimpleTable.app/SimpleTable312965180#312965180#0(0"0(0#0#92"/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable8617941632#451"    cd /Users/emilien/Documents/SimpleTable    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable -o /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app.dSYM0#
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/SimpleTable.app.dSYM build/Debug-iphonesimulator/SimpleTable.app/SimpleTable313240377#313240377#0(0"0(0#0#92"/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable8602650144#451"    cd /Users/emilien/Documents/SimpleTable    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable -o /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app.dSYM0#
 
 CLd /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable normal i386
-s312965180.954246
-e312965180.974651
+s313240377.531124
+e313240377.552656
 r1
 xLd
 x/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable
 xnormal
 xi386
-lSLF07#2@97"Link /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable312965180#312965180#0(0"0(0#0#0"8601244960#996"    cd /Users/emilien/Documents/SimpleTable    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -F/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -filelist /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTable.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreLocation -o /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable0#
+lSLF07#2@97"Link /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable313240377#313240377#0(0"0(0#0#0"8604665728#996"    cd /Users/emilien/Documents/SimpleTable    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -F/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -filelist /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/Objects-normal/i386/SimpleTable.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreLocation -o /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/SimpleTable0#
 
 CProcessInfoPlistFile /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app/Info.plist SimpleTable-Info.plist
 s312623582.787871
@@ -388,10 +427,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@33"Precompile SimpleTable_Prefix.pch312623584#312623585#0(0"0(0#0#59"/Users/emilien/Documents/SimpleTable/SimpleTable_Prefix.pch8618848832#1924"    cd /Users/emilien/Documents/SimpleTable    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-generated-files.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-own-target-headers.hmap -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-all-target-headers.hmap -iquote /Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/SimpleTable-project-headers.hmap -F/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator -I/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/include -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources/i386 -I/Users/emilien/Documents/SimpleTable/build/SimpleTable.build/Debug-iphonesimulator/SimpleTable.build/DerivedSources -c /Users/emilien/Documents/SimpleTable/SimpleTable_Prefix.pch -o /var/folders/xX/xXsEmcPnGPyJxs-RU0pgek+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SimpleTable_Prefix-cgvzxklpudqtghedozzxzszpjdwk/SimpleTable_Prefix.pch.gch0#
 
 CTouch /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app
-s312965180.988516
-e312965180.990858
+s313240377.568662
+e313240377.570654
 r1
 xTouch
 x/Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app
-lSLF07#2@86"Touch /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app312965180#312965180#0(0"0(0#0#0"8604508768#340"    cd /Users/emilien/Documents/SimpleTable    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app0#
+lSLF07#2@86"Touch /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app313240377#313240377#0(0"0(0#0#0"8618630432#340"    cd /Users/emilien/Documents/SimpleTable    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/emilien/Documents/SimpleTable/build/Debug-iphonesimulator/SimpleTable.app0#
 

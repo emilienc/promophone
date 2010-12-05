@@ -7,6 +7,7 @@
 //
 
 #import "SimpleTableViewController.h"
+#import "CustomCell.h"
 
 @implementation SimpleTableViewController
 
@@ -15,6 +16,11 @@
 @synthesize locationMeasurements;
 @synthesize tblSimpleTable;
 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	return 50;
+}
 
 
 /*
@@ -119,11 +125,11 @@
 
 	
 
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	/*UITableViewCell*/CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
 	if (cell == nil) {
 	
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[/*UITableViewCell*/CustomCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
 	
 	}
 	
@@ -131,7 +137,20 @@
 	
 	// Set up the cell...
 	
-	[cell.textLabel setText:[[dao ItemAtIndex:indexPath.row] valueForKey:@"description"]];
+	/*[cell.textLabel setText:[[dao ItemAtIndex:indexPath.row] valueForKey:@"description"]];*/
+	[cell.primaryLabel setText:[[dao ItemAtIndex:indexPath.row] valueForKey:@"description"]];
+	[cell.secondaryLabel setText:[[dao ItemAtIndex:indexPath.row] valueForKey:@"adresse"]];
+	
+	id path = [[dao ItemAtIndex:indexPath.row] valueForKey:@"photo"];
+	NSURL *url = [NSURL URLWithString:path];
+	NSData *data = [NSData dataWithContentsOfURL:url];
+	UIImage *img = [[UIImage alloc] initWithData:data cache:NO];
+	
+	[cell.myImageView setImage:img];
+
+	
+	
+		
 	return cell;
 
 }
@@ -200,8 +219,8 @@
 	//NSString *urlNextPage		= [NSString stringWithFormat:@"http://geopromo.heroku.com/promotions/list.plist?lat=43.192867&lng=5.755785"];
 	
 	CLLocationCoordinate2D	coordinate = [newLocation coordinate];
-	NSString *urlNextPage		= [NSString stringWithFormat:@"http://geopromo.heroku.com/promotions/list.plist?lat=%f&lng=%f", coordinate.latitude,coordinate.longitude];
-	NSURL	*theFileURL				= [NSURL URLWithString:urlNextPage];
+	NSString *urlNextPage	= [NSString stringWithFormat:@"http://geopromo.heroku.com/promotions/list.plist?lat=%f&lng=%f", coordinate.latitude,coordinate.longitude];
+	NSURL	*theFileURL		= [NSURL URLWithString:urlNextPage];
 	
 	//printf("localisation = lat = %f long = %f\n", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
 	//NSLog(urlNextPage);
